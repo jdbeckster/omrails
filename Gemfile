@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0.4"
 gem "cocaine", "~> 0.3.2"
+gem 'aws-sdk'
 
 
 group :production do
