@@ -1,52 +1,49 @@
-/* You could change the font */ 
+/* You could change the font */
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-/* You could change the navbar color, look for code in customize */
 $btnPrimaryBackground: green;
-/* $navbarBackgroundHighlight: white;
-$navbarBackground: white; */ 
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
 
-@import 'bootstrap'; 
+@import 'bootstrap';
 
 body {
 	padding-top: 60px;
 }
 
-@import 'bootstrap-responsive'; 
+@import 'bootstrap-responsive';
 
-/* You can take shadow away from nav-bar */
 .navbar-inner {
 	@include box-shadow(none !important);
 	border: 0;
 }
 
 .footer {
-
-	margin-top: 50px; 
-	color: $grayLight; 
+	margin-top: 50px;
+	color: $grayLight;
 	a {
-		color: $gray; 
+		color: $gray;
 	}
 }
 
-/* Required for jQuery Masonry */ 
+/* Required for jQuery Masonry */
 
 .box {
-		margin: 5px;
-		padding: 5px;
-		font-size: 11px;
-		line-height: 1.4em;
-		float: left;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-		box-shadow: 1px 1px 10px #444;
-		width: 214px;
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 214px;
 }
 
-.box img{
-	display: block;
+.box img {
+	diplay: block;
 	width: 100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;

@@ -4,15 +4,15 @@ gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem "paperclip", "~> 3.0.4"
-gem "cocaine", "~> 0.3.2"
+gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
-
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :production do
 	gem 'pg'
-end	
-
+end
 
 group :development, :test do
 	gem 'sqlite3'
@@ -24,7 +24,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass', '~> 2.2.2.0'
 end
-
-
-
-
