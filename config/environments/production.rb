@@ -65,19 +65,16 @@ Omrails::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # Heroku Devise - Look at development.rb for further description. 
+  # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-  # Configuring Amazon S3 to keep images uploaded for paperclip file upload, where heroku deletes them automatically
+  # Configuring Amazon S3 for Paperclip fil uploads
   config.paperclip_defaults = {
-      :storage => :s3,
-      :s3_credentials => {
-        :bucket => ENV['AWS_BUCKET'],
-        :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-        :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-      }
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
-
-end
-
+  }
 end
